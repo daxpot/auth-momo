@@ -1,0 +1,4 @@
+zengkv-auth-momo:
+  forum:
+    log_in:
+      with_momo_button: "使用 Momo 登入"
