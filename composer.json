@@ -1,0 +1,35 @@
+{
+    "name": "zengkv/auth-momo",
+    "description": "Allow users to log in with Momo.",
+    "type": "flarum-extension",
+    "keywords": ["authentication"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kui Zeng",
+            "email": "zengkv@gmail.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/zengkv/auth-momo",
+        "issues": "https://github.com/zengkv/auth-momo/issues"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zengkv\\Auth\\Momo\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Momo Login",
+            "icon": {
+                "name": "fab fa-facebook",
+                "backgroundColor": "#3b5998",
+                "color": "#fff"
+            }
+        }
+    }
+}
