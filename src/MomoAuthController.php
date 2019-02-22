@@ -69,9 +69,6 @@ class MomoAuthController implements RequestHandlerInterface
             'avatar_url' => $info["headimg"],
             'username' => $info["name"]
         ];
-        if(mb_strlen($user["username"], "utf8") < 3) {
-            $user["username"] .= "_".substr($user["username"], -2);
-        }
         
         return $this->response->make(
             'momo', $user['id'],

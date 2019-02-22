@@ -14,11 +14,15 @@ app.initializers.add('zengkv-auth-momo', () => {
       </LogInButton>
     );
     setTimeout(function(){
-      var email = $(".FormControl[name=email]").val().match(/ouFd\S+\@mozigu\.cn/g);
+      var email = null;
+      var val = $(".FormControl[name=email]").val();
+      if(val) {
+        email = val.match(/ouFd\S+\@mozigu\.cn/g);
+      }
       var submit = $(".Button.Button--primary.Button--block[type=submit]");
       if(email && submit.text() == '注册') {
         submit.click();
       }
-    }, 2000);
+    }, 800);
   });
 });
